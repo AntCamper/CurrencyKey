@@ -1,40 +1,36 @@
 /* Style for the dropdown menu */
 select {
-    position: relative; 
-    background-color: lightgrey; 
-    border: none; 
-    outline: none; 
-    padding: 10px; 
-    appearance: none; 
-    width: 200px; 
+    position: relative;
+    background-color: lightgrey;
+    border: none;
+    outline: none;
+    padding: 10px;
+    appearance: none;
+    width: 200px;
 }
 
 /* Pseudo-element for the swallowtail flag shape */
 select::after {
     content: '';
     position: absolute;
-    right: 10px; 
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
     width: 0;
     height: 0;
-    border-left: 10px solid transparent; 
-    border-right: 10px solid transparent; 
-    border-top: 10px solid lightgrey; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+    pointer-events: none;
 }
 
 /* Style for the dropdown options */
 select option {
-    background-color: rgb(236, 236, 236); 
+    background-color: rgb(236, 236, 236);
 }
 
 /* Hover effect for the dropdown menu */
 select:hover {
     background-color: #535353;
-    border: 1px solid #aa3a3a;
-}
-
-/* hover effect for the dropdown options */
-select option:hover {
-    background-color: #51b46a;
+    color: #fff;
 }
