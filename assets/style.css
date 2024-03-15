@@ -3,7 +3,7 @@
     position: relative;
     display: inline-block;
 }
-/* Style for the dropdown  button */
+/* Style for the menu trigger */
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -13,7 +13,7 @@
     cursor: pointer;
 }
 
-/* Changes the background color of the dropdown button when the dropdown content is shown via cursor hover */
+/* Changes the background color of the menu trigger when the dropdown content is shown via cursor hover */
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
@@ -37,6 +37,11 @@
 }
 
 /* change color of dropdown links on hover */
-.dropdonw-content a:hover {
+.dropdown-content a:hover {
     background-color: #a5a5a5;
+}
+
+/* Show the dropdown content when the dropdown container is hovered over */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
