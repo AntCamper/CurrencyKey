@@ -1,47 +1,40 @@
-/* Style for the dropdown container */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-/* Style for the menu trigger */
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+/* Style for the dropdown menu */
+select {
+    position: relative; 
+    background-color: lightgrey; 
+    border: none; 
+    outline: none; 
+    padding: 10px; 
+    appearance: none; 
+    width: 200px; 
 }
 
-/* Changes the background color of the menu trigger when the dropdown content is shown via cursor hover */
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-
-/* Style for the dropdown content */
-.dropdown-content {
-    display: none;
+/* Pseudo-element for the swallowtail flag shape */
+select::after {
+    content: '';
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,0.2);
-    z-index: 1;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-top: 10px solid lightgrey; 
 }
 
-/* Style for the dropdown items */
-.dropdown-content a {
-    color:black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: none;
+/* Style for the dropdown options */
+select option {
+    background-color: rgb(236, 236, 236); 
 }
 
-/* change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #a5a5a5;
+/* Hover effect for the dropdown menu */
+select:hover {
+    background-color: #535353;
+    border: 1px solid #aa3a3a;
 }
 
-/* Show the dropdown content when the dropdown container is hovered over */
-.dropdown:hover .dropdown-content {
-    display: block;
+/* hover effect for the dropdown options */
+select option:hover {
+    background-color: #51b46a;
 }
