@@ -1,29 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="./assets/style.css" />
-    <title>CurrencyKey</title>
-</head>
-<body>
-   <h1>Currency Key</h1> 
-   <label for="countryCurrency">Choose a country</label>
-   <select name="countryCurrency" id="countryCurrency">
-        <option value="Yen">Yen</option>
-        <option value="USD">USD</option>
-        <option value="Pesos">Pesos</option>
-        <option value="Rubles">Rubles</option>
-        <option value="Euro">Euro</option>
-   </select>
+<div class="calculator">
+    <!-- Main heading for the currency key -->
+    <h1>Currency Key</h1>
 
-   <select name="countryCurrency" id="countryCurrency">
-    <option value="Yen">Yen</option>
-    <option value="USD">USD</option>
-    <option value="Pesos">Pesos</option>
-    <option value="Rubles">Rubles</option>
-    <option value="Euro">Euro</option>
-</select>
-   
-</body>
-</html>
+    <!-- First currency selection dropdown -->
+    <div class="currency-selection">
+        <div class="dropdown">
+            <!-- Button to open the dropdown -->
+            <button class="dropbtn">Select Currency</button>
+            <!-- Dropdown menu content -->
+            <div class="dropdown-content">
+                <!-- Currency options as anchor tags -->
+                <a href="#" data-currency="Yen">Yen</a>
+                <a href="#" data-currency="USD">USD</a>
+                <a href="#" data-currency="Pesos">Pesos</a>
+                <a href="#" data-currency="Rubles">Rubles</a>
+                <a href="#" data-currency="Euro">Euro</a>
+            </div>
+        </div>
+        <!-- Input field to display the selected currency -->
+        <input type="text" id="selectedCurrency1" readonly>
+    </div>
+
+    <!-- Second currency selection dropdown -->
+    <div class="currency-selection">
+        <div class="dropdown">
+            <!-- Button to open the dropdown -->
+            <button class="dropbtn">Select Currency</button>
+            <!-- Dropdown menu content -->
+            <div class="dropdown-content">
+                <!-- Currency options as anchor tags -->
+                <a href="#" data-currency="Yen">Yen</a>
+                <a href="#" data-currency="USD">USD</a>
+                <a href="#" data-currency="Pesos">Pesos</a>
+                <a href="#" data-currency="Rubles">Rubles</a>
+                <a href="#" data-currency="Euro">Euro</a>
+            </div>
+        </div>
+        <!-- Input field to display the selected currency -->
+        <input type="text" id="selectedCurrency2" readonly>
+    </div>
+</div>
