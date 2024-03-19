@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="./assets/style.css" />
-    <title>CurrencyKey</title>
+    <title>Currency Key</title>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-   <h1>Currency Key</h1> 
-   <label for="countryCurrency">Choose a country</label>
-   <select name="countryCurrency" id="countryCurrency">
-        <option value="Yen">Yen</option>
-        <option value="USD">USD</option>
-        <option value="Pesos">Pesos</option>
-        <option value="Rubles">Rubles</option>
-        <option value="Euro">Euro</option>
-   </select>
-
-   <select name="countryCurrency" id="countryCurrency">
-    <option value="Yen">Yen</option>
-    <option value="USD">USD</option>
-    <option value="Pesos">Pesos</option>
-    <option value="Rubles">Rubles</option>
-    <option value="Euro">Euro</option>
-</select>
-   
+    <div class="calculator">
+        <h1>Currency Key</h1>
+        <div class="currency-selection">
+            <div class="dropdown">
+                <button class="dropbtn">Select Currency</button>
+                <div class="dropdown-content">
+                    <a href="#" data-currency="JPY">Yen</a>
+                    <a href="#" data-currency="USD">USD</a>
+                    <a href="#" data-currency="MXN">Pesos</a>
+                    <a href="#" data-currency="RUB">Rubles</a>
+                    <a href="#" data-currency="EUR">Euro</a>
+                </div>
+            </div>
+            <input type="text" id="selectedCurrency1" readonly>
+        </div>
+        <div class="currency-selection">
+            <div class="dropdown">
+                <button class="dropbtn">Select Currency</button>
+                <div class="dropdown-content">
+                    <a href="#" data-currency="JPY">Yen</a>
+                    <a href="#" data-currency="USD">USD</a>
+                    <a href="#" data-currency="MXN">Pesos</a>
+                    <a href="#" data-currency="RUB">Rubles</a>
+                    <a href="#" data-currency="EUR">Euro</a>
+                </div>
+            </div>
+            <input type="text" id="selectedCurrency2" readonly>
+        </div>
+        <input type="text" id="amount" placeholder="Enter amount">
+        <button id="SuperAwesomeButton">Convert</button>
+        <div id="result"></div>
+    </div>
+    <script src="assets/script.js"></script>
 </body>
 </html>
