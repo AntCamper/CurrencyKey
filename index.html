@@ -1,29 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="Itr">
+
 <head>
     <meta charset="UTF-8">
+    <title>CurrencyConvertor</title>
+    <link rel="stylesheet" href="./assets/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="./assets/style.css" />
-    <title>CurrencyKey</title>
 </head>
 <body>
-   <h1>Currency Key</h1> 
-   <label for="countryCurrency">Choose a country</label>
-   <select name="countryCurrency" id="countryCurrency">
+    <div class="wrapper">
+        <header>Currency Converter</header>
+        <from action="#">
+            <div class="amount">
+                  <p>Enter Amount</p>
+                <input type="text" value="1">
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                <p>from</p>
+                <div class="select-box">
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                    <select>
+                        <option value="USD">USD</option>
+                        <option value="Yen">Yen</option>
+                        <option value="Pesos">Pesos</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Rubles">Rubles</option>
+                    </select>
+                </div>
+            </div>
+            <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+    <div class="to">
+        <p>to</p>
+        <div class="select-box">
+            <img src="https://flagsapi.com/GB/flat/64.png" alt="flag">
+            <select>
+                <option value="USD">USD</option>
+                <option value="Yen">Yen</option>
+                <option value="Pesos">Pesos</option>
+                <option value="Euro">Euro</option>
+                <option value="Rubles">Rubles</option>
+            </select>
+        </div>
+    </div>
+    </div>
+    <div class="exchange-rate">1 USD = 118.16 GB</div>
+    <button>Get Exchange Rate</button>
+    </from>
+    </div>
+    <h1>Currency Key</h1>
+    <label for="countryCurrency">Choose a country</label>
+    <select name="countryCurrency" id="countryCurrency">
         <option value="Yen">Yen</option>
         <option value="USD">USD</option>
         <option value="Pesos">Pesos</option>
         <option value="Rubles">Rubles</option>
         <option value="Euro">Euro</option>
-   </select>
 
-   <select name="countryCurrency" id="countryCurrency">
-    <option value="Yen">Yen</option>
-    <option value="USD">USD</option>
-    <option value="Pesos">Pesos</option>
-    <option value="Rubles">Rubles</option>
-    <option value="Euro">Euro</option>
-</select>
-   
+
+    </select>
+
+    <select name="countryCurrency" id="countryCurrency">
+        <option value="Yen">Yen</option>
+        <option value="USD">USD</option>
+        <option value="Pesos">Pesos</option>
+        <option value="Rubles">Rubles</option>
+        <option value="Euro">Euro</option>
+    </select>
+
 </body>
+
 </html>
