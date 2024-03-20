@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 <html lang="en" dir="Itr">
-
 <head>
     <meta charset="UTF-8">
     <title>CurrencyConvertor</title>
@@ -10,64 +8,42 @@
 <body>
     <div class="wrapper">
         <header>Currency Converter</header>
-        <from action="#">
+        <form action="#">
             <div class="amount">
-                  <p>Enter Amount</p>
-                <input type="text" value="1">
+                <p>Enter Amount</p>
+                <input type="text" id="amount" value="1">
             </div>
             <div class="drop-list">
                 <div class="from">
-                <p>from</p>
-                <div class="select-box">
-                    <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
-                    <select>
-                        <option value="USD">USD</option>
-                        <option value="Yen">Yen</option>
-                        <option value="Pesos">Pesos</option>
-                        <option value="Euro">Euro</option>
-                        <option value="Rubles">Rubles</option>
-                    </select>
+                    <p>From</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                        <select id="selectedCurrency1">
+                            <option value="USD">USD</option>
+                            <option value="JPY">Yen</option>
+                            <option value="MXN">Pesos</option>
+                            <option value="EUR">Euro</option>
+                            <option value="RUB">Rubles</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/GB/flat/64.png" alt="flag">
+                        <select id="selectedCurrency2">
+                            <option value="USD">USD</option>
+                            <option value="JPY">Yen</option>
+                            <option value="MXN">Pesos</option>
+                            <option value="EUR">Euro</option>
+                            <option value="RUB">Rubles</option>                        </select>
+                    </div>
                 </div>
             </div>
-            <div class="icon"><i class="fas fa-exchange-alt"></i></div>
-    <div class="to">
-        <p>to</p>
-        <div class="select-box">
-            <img src="https://flagsapi.com/GB/flat/64.png" alt="flag">
-            <select>
-                <option value="USD">USD</option>
-                <option value="Yen">Yen</option>
-                <option value="Pesos">Pesos</option>
-                <option value="Euro">Euro</option>
-                <option value="Rubles">Rubles</option>
-            </select>
-        </div>
+            <div class="exchange-rate" id="result">1 USD = 118.16 GB</div>
+            <button type="button" id="convertButton">Get Exchange Rate</button>        </form>
     </div>
-    </div>
-    <div class="exchange-rate">1 USD = 118.16 GB</div>
-    <button>Get Exchange Rate</button>
-    </from>
-    </div>
-    <h1>Currency Key</h1>
-    <label for="countryCurrency">Choose a country</label>
-    <select name="countryCurrency" id="countryCurrency">
-        <option value="Yen">Yen</option>
-        <option value="USD">USD</option>
-        <option value="Pesos">Pesos</option>
-        <option value="Rubles">Rubles</option>
-        <option value="Euro">Euro</option>
-
-
-    </select>
-
-    <select name="countryCurrency" id="countryCurrency">
-        <option value="Yen">Yen</option>
-        <option value="USD">USD</option>
-        <option value="Pesos">Pesos</option>
-        <option value="Rubles">Rubles</option>
-        <option value="Euro">Euro</option>
-    </select>
-
+    <script src="assets/script.js"></script>
 </body>
-
 </html>
