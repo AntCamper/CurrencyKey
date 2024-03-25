@@ -3,6 +3,7 @@ function parseCSV(data) {
     const lines = data.split('\n');
     return lines.map(line => line.split(','));
 }
+
 // Function to display the parsed data in a table
 const displayData = (parsedData) => {
     const container = document.getElementById('data-container');
@@ -52,6 +53,7 @@ const displayData = (parsedData) => {
 
     tableWrapper.appendChild(table);
 };
+
 // Fetch the CSV file from GitHub and parse it
 document.addEventListener('DOMContentLoaded', () => {
     fetch('https://raw.githubusercontent.com/TheEconomist/big-mac-data/master/source-data/big-mac-source-data.csv')
@@ -61,4 +63,18 @@ document.addEventListener('DOMContentLoaded', () => {
             displayData(parsedData);
         })
         .catch(error => console.error('Error fetching CSV:', error));
+});
+
+// Font toggle functionality
+document.getElementById('fontToggleBtn').addEventListener('click', function() {
+    const elements = document.querySelectorAll('.nav-item, .header-cell, .table-body td');
+    const font1 = 'McLawsuit';
+    const font2 = 'sans-serif';
+    elements.forEach(element => {
+        if (element.style.fontFamily === font1) {
+            element.style.fontFamily = font2;
+        } else {
+            element.style.fontFamily = font1;
+        }
+    });
 });
