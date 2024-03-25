@@ -76,7 +76,32 @@ currency2.addEventListener("change", function(e){
     
   }
 })
+// Get the modal elements
+const modal = document.getElementById("modal-container");
+const closeBtn = document.getElementById("close-modal");
 
+// Function to show the modal
+function showModal() {
+ modal.style.display = "block";
+}
+
+// Function to hide the modal
+function hideModal() {
+ modal.style.display = "none";
+}
+
+// Add event listener to the close button
+closeBtn.addEventListener("click", hideModal);
+
+// Add event listener to the window to close the modal when clicked outside
+window.addEventListener("click", function (event) {
+ if (event.target == modal) {
+    hideModal();
+ }
+});
+
+// Show the modal on page load
+window.onload = showModal;
 
 // <!--<img src="https://flagsapi.com/US/flat/64.png" alt="US flag">
 // <img src="https://flagsapi.com/GB/flat/64.png" alt="GB flag">
