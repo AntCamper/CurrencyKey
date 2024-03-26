@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'McLawsuit';
+    src: url('https://www.fontsaddict.com/fontface/mclawsuit.ttf');
+}
+
+body {
+    background-image: url('booth-seating.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#navbar {
+    background-color: #e5cb7a;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; 
+}
+
+.nav-item {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: wavy;
+    font-family: 'McLawsuit', sans-serif;
+}
+
+.nav-item:hover {
+    background-color: #ceb66f;
+    color: black;
+}
+
+#table-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 80px 20px 0 20px; 
+}
+
+#data-container {
+    width: 80%;
+    height: auto;
+    overflow-y: scroll;
+    margin: 0 auto;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-font-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #7a85e5;
+    border: none;
+    color: #000000;
+}
+
+.toggle-font-btn:hover {
+    background-color: #ceb66f; /* Hover effect */
+}
+
+#bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #e5cb7a;
+}
+
+.header-cell {
+    background-color: #32c704;
+    color: #333;
+}
+
+.table-body {
+    background-color: #450101;
+}
+
+.table-body td {
+    color: #d4e211a6;
+    font-family: 'McLawsuit', sans-serif;
+    font-size: 14px;
+}
+
+.header-cell {
+    color: #a31414;
+    font-family: 'McLawsuit', sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width: 300px) {
+    #table-container {
+        flex-direction: column;
+    }
+}
