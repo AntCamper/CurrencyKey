@@ -21,3 +21,4 @@ Special thanks to:
 - [Mehrnaz](https://github.com/Mehrnazkiani24): 
 - [Sam](https://github.com/sampena118)
 - [Telmen](https://github.com/telgan599)
+- [Cassidy](https://github.com/cassidywalthall)
