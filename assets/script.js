@@ -77,7 +77,14 @@ currency2.addEventListener("change", function(e){
   }
 })
 
-
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+ modal.style.display = "none";
+}
+window.onload = function() {
+ modal.style.display = "block";
+}
 // <!--<img src="https://flagsapi.com/US/flat/64.png" alt="US flag">
 // <img src="https://flagsapi.com/GB/flat/64.png" alt="GB flag">
 // <img src="https://flagsapi.com/JP/shiny/64.png" alt="JP flag">
